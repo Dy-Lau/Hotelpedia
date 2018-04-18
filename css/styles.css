@@ -1,0 +1,1199 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #f1f1f1;
+  font-family: 'Muli', sans-serif;
+}
+
+/*********************************************************************************** HEADER *****************************************************************************/
+#header-nav {
+  background-color: #000;
+  border-radius: 0;
+  border: 0;
+  margin: -20px 0 0 0;
+  background: rgba(0, 0, 0, 0.32);
+}
+#header-nav h1{
+  opacity: 1;
+}
+#logo-img {
+  background: url('../images/hotelpedia_logo_4_medium.png') no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.navbar {  /*Navigation Bar Fixed Position*/
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.navbar-brand {
+  padding-top: 65px; /* For hotel name*/}
+
+.navbar-brand h1 { /* Hotel name */
+  font-family: 'Muli';
+  color:#fcdd44;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  margin-left: 10px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Find your place to stay */
+  /*color: #838383;
+  font-size: .5em;
+  margin-top: 0px;
+  margin-left: 10px;*/
+}
+
+#nav-list {
+  margin-top: 10px;
+  margin-left: 70px;
+
+}
+#nav-list a {
+  color: #ffdd04;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  font-size: 1em;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+#nav-list a:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+.navbar-nav>li>a{
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -55px;
+}
+/*********************************************************************************** END OF HEADER *****************************************************************************/
+
+/******************************************************************************* HOME PAGE ************************************************************************************/
+
+
+/*==============================================================================CAROUSEL=====================================================================================*/
+.carousel {
+    height: 580px;
+    margin-top: -120px;
+    margin-bottom: 350px;
+}
+.carousel-indicators{
+  visibility: hidden;
+}
+/* Since positioning the image, we need to help out the caption */
+ .carousel-caption {
+  position: absolute;
+  text-align: center;
+  z-index: 100;
+}
+.caption h1{
+  color: #fcdd44;
+  text-transform: uppercase;
+}
+.caption p{
+  color: #fcdd14;
+}
+
+/* Declare heights because of positioning of img element */
+ .carousel .item {
+    width:100%;
+    height: 580px;
+    background-color: #777;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 1000px;
+}
+@media (min-width: 768px) {
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+}
+img {
+    background: #ccc;
+}
+/*================================================================================END OF CAROUSEL==============================================================================*/
+
+/*#banner-text{
+  position: relative;
+  font-family: "Muli";
+  -webkit-text-stroke: .3px #be9900;
+  text-align: center;
+  z-index: 1;
+}
+#banner-text h3{
+  margin-top: -490px;
+  font-size: 1em;
+  color: #000;
+  text-transform: uppercase;
+}
+#banner-text h1{
+  font-size: 8em;
+  color: #fcdd44;
+  text-transform: uppercase;
+}
+#banner-text p{
+  margin-top: 20px;
+  font-size: 1em;
+  color: #000;
+}*/
+
+/*=================================================================================SEARCH BAR=================================================================================*/
+.search{
+  margin-top: -300px;
+}
+.searchBar{
+  margin-top: 10px;
+  border: 1px solid #fcdd44;
+  padding: 25px;
+  height: 91px;
+  border-radius:5px;
+  color: #000;
+  font-size: 1.5vw;
+}
+.searchBtn{
+  margin-top: 10px;
+  border: 0px solid #fcdd44;
+  padding: 5px;
+  height: 91px;
+  border-radius: 2px;
+  color: #000;
+  background: #fcdd44;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+.searchBtn:hover{
+  color: #be9900;
+  background: #000;
+  border: 3px solid #be9900;
+  transform: scale(1.1);
+}
+/*SEARCH BAR:HOTELS CATEGORY*/
+.search2{
+  position: relative;
+  margin-bottom: 80px;
+}
+.searchBar2{
+  margin-top: 10px;
+  border: 1px solid #fcdd44;
+  padding: 25px;
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+  color: #000;
+  font-size: 1.1vw;
+  height: 10px;
+}
+.searchBtn2{
+  margin-top: 8.7px;
+  border: 1px solid #fcdd44;
+  padding: 5px;
+  height: 52px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #000;
+  background: #fcdd44;
+  cursor: pointer;
+  font-size: 1vw;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+.searchBtn2:hover{
+  color: #be9900;
+  background: #000;
+  border: 3px solid #be9900;
+  transform: scale(1.1);
+}
+
+/*END OF SEARCH BAR:HOTELS CATEGORY*/
+
+/*==============================================================================END OF SEARCH BAR=============================================================================*/
+
+.leg-title{
+  position: relative;
+  top: 10px;
+  color:#000;
+
+}
+
+/*===============================================================================TOP 3 HOTELS=================================================================================*/
+/*.top-hotels{
+  margin-top: 60px;
+}*/
+.top-hotels h1{
+  position:relative;
+  margin-top:2.5%;
+  bottom: 0;
+  right: 0;
+  font-size:1.5em;
+  letter-spacing: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  color: #be9900;
+}
+
+hr.style1, hr.style2 {
+  height: 2px;
+  width: 100%;
+  margin-bottom: 35px;
+  position: relative;
+  border: 0;
+  background-color: black;
+}
+hr.style2{
+  background-position: center;
+}
+hr.style2{
+ background-position: center;
+}
+
+#hotel_img{
+  height: 260px;
+  margin-bottom: 15px;
+  position: relative;
+  background-position: center;
+}
+#hotel_img span{
+  position:absolute;
+  color: #000;
+  text-align: center;
+  font-family: "Muli";
+}
+/*=============================================================================END OF TOP 3 HOTELS===========================================================================*/
+
+/*========================================================================== SINGLE CATEGORY PAGE ============================================================================*/
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  background: #be9900;
+  width: 80%;
+  border:1px solid #000;
+}
+.menu-item-price {
+  font-size: 1em;
+  margin-top: 10px;  color: #be9900;
+}
+.menu-item-price span{
+  font-size: 1.4em;
+  margin-left:225px;
+  display: inline;
+}
+
+.menu-item-photo {
+  position: relative;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 320px;
+}
+
+.menu-item-description {
+  padding-right: 40px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px 0;
+  color: #be9900;
+  font-family: "Muli";
+  text-transform: uppercase;
+  font-size: 1.6em;
+}
+.menu-item-details {
+  font-size:1em;
+  text-transform: capitalize;
+  color: #000;
+  font-family: "Muli";
+}
+.view-btn{
+  margin-top:30px;
+}
+.view-btn a{
+  position: relative;
+  padding: 9px 16px 8px;
+  font-weight: bold;
+  border: 1px solid #be9900;
+  border-radius: 2px;
+  background-clip: padding-box;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+.view-btn a:hover{
+  background-color: #fc0;
+}
+/*============================================================================= END SINGLE CATEGORY PAGE =====================================================================*/
+
+/********************************************************************************** END OF HOME PAGE **************************************************************************/
+
+/*===============================================================================HOTEL CATEGORIES PAGE =======================================================================*/
+.category-tile {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 150px auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 2px 2px 1px #222;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* ======================================================================== END OF HOTEL CATEGORIES PAGE =====================================================================*/
+
+/*============================================================================ HOTEL (CHOSEN) ==============================================================================*/
+#hotel-description{
+  margin-top: 10px;
+}
+#hotel-description h3{
+  color: #be9900;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: "Yu Gothic Light";
+}
+#hotel-description p{
+  color: #000;
+  font-family: "Yu Gothic";
+  margin-top: -10px;
+}
+
+/* ============================================================================IMAGE GALLERY ================================================================================*/
+#gallery {
+  margin-top: 10px;
+  color: #be9900;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Yu Gothic";
+}
+#gallery hr{
+  margin-top: -10px;
+  border: 1.5px solid #000;
+  width: 100%;
+}
+
+.column {
+  position: relative;
+  margin: 10px;
+  float: left;
+  width: 260px;
+  background-position: center;
+}
+div.column img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  color: #000;
+  padding: 15px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1125px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+  margin-left:auto ;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+/*============================================================================ END OF IMAGE GALLERY ======================================================================*/
+
+/*=============================================================================== ABOUT HOTEL ==============================================================================*/
+#about-hotel {
+  margin-top: 50px;
+}
+#about-hotel hr{
+  margin-top: 0px;
+  border: 1.5px solid #000;
+  width: 100%;
+  background-color:#000;
+}
+#about-hotel h1{
+  color: #be9900;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Yu Gothic";
+}
+#about-hotel h2{
+  margin-top: 0px;
+  color: #000;
+  font-size: 1.2em;
+  font-family: "Yu Gothic";
+}
+.booking-btn{
+  float: right;
+  margin-top:-40px;
+}
+.booking-btn a{
+  position: relative;
+  display: inline-block;
+  padding: 9px 16px 8px;
+  font-weight: bold;
+  border: 1px solid #be9900;
+  border-radius: 2px;
+  background-clip: padding-box;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+.booking-btn:hover{
+  background-color: #fc0;
+}
+.hotel-amenities-details{
+  color: #000;
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .8em;
+  list-style: none;
+}
+.hotel-amenities-details li, p.hotel-amenities-details{
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #555;
+}
+p.hotel-amenities-details{
+  margin-top: -08px;
+  margin-bottom: 20px;
+}
+/*============================================================================= END OF ABOUT HOTEL =======================================================================*/
+
+/*========================================================================== USERS WRITING A REVIEW ===================================================================*/
+#review-heading{
+  color: #000;
+  text-transform: capitalize;
+  font-size: 2.5vw;
+  font-family: "Yu Gothic";
+}
+#review-heading hr{
+   margin-top: 0px;
+  border: 1.5px solid #000;
+  width: 100%;
+  background-color:#000;
+}
+#review-titles label{
+  margin-top: 30px;
+  margin
+  color: #000;
+  text-transform: capitalize;
+  font-size: 1.4em;
+  font-family: "Yu Gothic Light";
+}
+#review-titles select{
+  margin-top:40px;
+  margin-left: -130px;
+  padding: 10px;
+  width:60px;
+}
+
+.third{
+  margin-top: -100px;
+}
+.btn-warning{
+  color: #000;
+  background-color: #fcdd44;
+}
+ input.input-group-lg{
+  margin-top: 65px;
+  margin-left: -145px;
+  padding: 20px;
+  border-color: #fcdd44;
+   height: 50px;
+}
+input.input-group-lg:hover{
+  border-color: #000;
+}
+ textarea.input-group-lg{
+  margin: 70px 0 0 50px;
+  padding: 15px;
+  border-color: #fcdd44;
+  height: 120px;
+  width:1020px;
+}
+textarea.input-group-lg:hover{
+  border-color: #000;
+}
+.submit-btn{
+  float: right;
+  margin-top: 30px;
+  padding: 10px 30px;
+}
+.submit-btn:hover{
+  background-color: #000;
+  color: #fcdd44;
+}
+
+/*====================================================================== END OF USERS WRITING A REVIEW =====================================================================*/
+
+/*=========================================================================== REVIEW-TILE ==================================================================================*/
+#review-tile{
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+#review-tile img{
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin-left: 35px;
+  display: block;
+}
+#review-tile h3{
+    color: #000;
+    font-size: 1.1vw !important;
+    margin-left:30px;
+
+}
+#review-tile a{
+  text-decoration: none;
+  font-size: .9vw;
+}
+/*=========================================================================== END OF REVIEW-TILE ==========================================================================*/
+
+
+
+/*=============================================================================END HOTEL (CHOSEN) =========================================================================*/
+
+
+
+
+/* ============================================================================ REGISTER/LOGIN =============================================================================*/
+/*button[id="join"]{
+          background-color: black;
+          border: none;
+        }
+
+        button[id="join"]:hover{
+          background-color: #E7E7E7;
+          border: none;
+        }*/
+        #login label, #signup label{
+          float: left;
+          color: #be9900;
+          padding-right: 10px;
+        }
+
+        #login input[type=text], #login input[type=password], #login input[type="email"],
+        #signup input[type=text], #signup input[type=password], #signup input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 3px;
+            float: left;
+        }
+
+        #loginbtn{
+          background-color: black;
+          color: white;
+          width: 68%;
+          border-radius: 1px;
+          padding: 12px 20px;
+          border: none;
+          margin: 8px 0;
+          float: left;
+          margin-bottom: -8px;
+        }
+        #cancelbtn1 {
+            float:left;
+            width:31.5%;
+            color: white;
+            padding: 13px;
+        }
+        #signupbtn{
+            float:left;
+            width:68%;
+            color: white;
+            padding: 13px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border: none;
+            background-color: black;
+        }
+        #cancelbtn1{
+            border-top-left-radius: 1px;
+            border-bottom-left-radius: 1px;
+            border: none;
+            background-color: #f44336;
+        }
+
+        .container-register {
+            position: inherit;
+            padding: 32px;
+            z-index: 500;
+        }
+
+        /* Form Background */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 500; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 0;
+        }
+
+        /* Login Form */
+        .modal-content-login {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 36%;
+            height: 330px;
+            border-radius: 3px;
+        }
+
+        /* Signup Form */
+        .modal-content-signup {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 35%;
+            height: 580px;
+            color: black;
+            border-radius: 6px;
+        }
+
+        /* Add Zoom Animation */
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {-webkit-transform: scale(0)}
+            to {-webkit-transform: scale(1)}
+        }
+
+        @keyframes animatezoom {
+            from {transform: scale(0)}
+            to {transform: scale(1)}
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+               display: block;
+               float: none;
+            }
+        }
+
+/*=============================================================================== END OF REGISTER/LOGIN =====================================================================*/
+
+/*=================================================================================== FOOTER ================================================================================*/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: #222;
+  border-top: 0;
+
+}
+.panel-footer div.row {
+  margin-bottom: 25px;
+}
+.panel-footer h1{
+  font-size: 20px;
+}
+.panel-footer span{
+  font-size: 10px;
+}
+/*============================================================================= END FOOTER =================================================================================*/
+
+/******************************************************************************* LARGE DEVICES ONLY ***************************************************************************/
+@media (min-width: 1200px) {
+ .jumbotron {
+    background: url('../images/banner-2000.jpg') no-repeat center;
+    height: 638px;
+    background-size: cover;
+  }
+
+  .modal-content-login {
+            width: 500px;
+            height: 330px;
+        }
+  .modal-content-signup {
+            width: 500px;
+            height: 610px;
+        }
+}
+
+/*************************************************************************** MEDIUM DEVICES ONLY ********************************************************************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/hotelpedia_logo_4_lg.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 30px 5px 10px 0;
+  }
+  /* End Header */
+
+  #nav-list{
+    margin-left: 30px;
+  }
+  /* End Home Page */
+
+  .modal-content-login {
+            width: 68%;
+            height: 330px;
+        }
+  .modal-content-signup {
+            width: 68%;
+            height: 610px;
+        }
+  textarea.input-group-lg{
+    width:835px;
+  }
+  #review-tile h3{
+    font-size:1.5vw !important;
+  }
+}
+
+
+/************************************************************************************* SMALL DEVICES ONLY **********************************************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  .navbar-brand h1 { /* Hotel name */
+    font-family: 'Muli';
+    color:#fcdd44;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: -10px;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  .navbar-brand p { /* Find your place to stay */
+    color: #838383;
+    font-size: .5em;
+    margin-top: 0px;
+  }
+  #nav-list {
+    margin-left: -43px;
+  }
+  /* End Home Page */
+
+   /*SEARCH BAR */
+  .searchBar{
+    border: 1px solid #fcdd44;
+    padding: 25px;
+    width: 900px;
+    height: 90px;
+    margin-left: 0px;
+    color: #000;
+    font-size: 2vw;
+  }
+  .searchBtn{
+    margin-top: 8.6px;
+    border: 21px solid #fcdd44;
+    padding: 5px;
+    height: 90px;
+    color: #000;
+    background: #fcdd44;
+    cursor: pointer;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+  }
+   /*END OF SEARCH BAR */
+
+  .column{
+    width: 340px;
+  }
+
+  #hotel-description h3{
+   font-size: 3em;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #be9900;
+  }
+  #hotel-description p{
+    text-align: center;
+    font-size: 1em;
+  }
+  .modal-content-login {
+      width: 60%;
+      height: 330px;
+  }
+  .modal-content-signup {
+      width: 60%;
+      height: 610px;
+  }
+  h3.menu-item-title{
+    font-size: 1.4em;
+  }
+  .menu-item-details{
+    font-size: .75em;
+  }
+  .menu-item-price, {
+    font-size: .8em;
+  }
+  .menu-item-price span{
+    font-size:1.2em;
+    margin-left: 125px;
+  }
+
+  textarea.input-group-lg{
+    width: 600px;
+  }
+
+  #review-tile h3{
+    font-size:1.8vw !important;
+  }
+}
+
+/************************************************************************************ EXTRA SMALL DEVICES ONLY *******************************************************/
+@media (max-width: 767px){
+  /* Header */
+  .navbar-brand {
+    padding-top: 15px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Hotel name */
+    padding-top: 20px;
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Find your place to stay */
+    font-size: .4em;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1em;
+    margin-top: 30px;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -46px;
+}
+  /* End Header */
+  #nav-list {
+  margin-top: 10px;
+  margin-left: 0px;
+}
+#nav-list a {
+  color: #ffdd04;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  font-size: 1em;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+#nav-list a:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+.navbar-nav>li>a{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+  .carousel-indicators{
+    bottom: -140px;
+  }
+  .carousel-caption h1{
+    font-size: 20px;
+  }
+
+    /*SEARCH BAR*/
+  .searchBar{
+    border: 1px solid #fcdd44;
+    padding: 25px;
+    height: 90px;
+    width: 100%;
+    outline: none;
+    color: #000;
+    font-size: 2.5vw;
+  }
+  .searchBtn{
+    border: 1px solid #fcdd44;
+    padding: 5px;
+    left: 1px;
+    height: 91px;
+    width: 100px;;
+    color: #000;
+    background: #fcdd44;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+    display: block;
+  }
+/*END OF SEARCH BAR*/
+
+  .modal-content-login {
+      width: 100%;
+      height: 330px;
+  }
+  .modal-content-signup {
+      width: 100%;
+      height: 610px;
+  }
+
+  .leg-title{
+   top: 100px;
+   }
+ .search2{
+    margin-top: 110px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+   h3.menu-item-title{
+    font-size: 1.6em;
+  }
+  .menu-item-details{
+    font-size: .75em;
+  }
+  .menu-item-price, {
+    font-size: .7em;
+  }
+  .menu-item-price span{
+    font-size:1.1em;
+    margin-left: 125px;
+  }
+
+  /*Gallery of Hotels*/
+  .column{
+    width: 430px;
+    margin: 10px 0 0 60px;
+  }
+
+
+  #hotel-description h3{
+   font-size: 2.8em;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #be9900;
+  }
+  #hotel-description p{
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #review-tile h3{
+    font-size:2vw !important;
+  }
+}
+
+
+/************************************************************************** SUPER EXTRA SMALL DEVICES ONLY (E.G iPHONE 4) ****************************************************/
+@media (max-width: 479px) {
+
+/* Home page */
+  .navbar-brand {
+    padding-top: 20px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Hotel name */
+    padding-top: 20px;
+    font-size: 5.5vw; /* 1vw = 1% of viewport width */
+  }
+
+  /*SEARCH BAR*/
+  .searchBar{
+    top: -30px;
+    height: 100px;
+    font-size: 4.5vw;
+  }
+  .searchBtn{
+    display: block;
+    min-width: 50px;
+    height: 100px;
+    top: -30.5px;
+  }
+
+/*END OF SEARCH BAR*/
+
+}
+
+/************************************************************************* ULTRA EXTRA SMALL DEVICES ONLY (E.G GALAXY S5) ****************************************************/
+@media (max-width: 400px) {
+
+/* Home page */
+
+
+/*END OF SEARCH BAR*/
+
+}
+
+
