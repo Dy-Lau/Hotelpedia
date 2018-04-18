@@ -1,0 +1,425 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #f1f1f1;
+  font-family: 'Muli', sans-serif;
+}
+
+/*********************************************************************************** HEADER *****************************************************************************/
+#header-nav {
+  background-color: #000;
+  border-radius: 0;
+  border: 0;
+  margin: -50px 0 0 0;
+  background: rgba(0, 0, 0, 0.32);
+}
+#header-nav h1{
+  opacity: 1;
+}
+#logo-img {
+  background: url('../images/hotelpedia_logo_4_medium.png') no-repeat;
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.navbar {  /*Navigation Bar Fixed Position*/
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.navbar-brand {
+  padding-top: 65px; /* For hotel name*/}
+
+.navbar-brand h1 { /* Hotel name */
+  font-family: 'Muli';
+  color:#fcdd44;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  margin-left: 10px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Find your place to stay */
+  /*color: #838383;
+  font-size: .5em;
+  margin-top: 0px;
+  margin-left: 10px;*/
+}
+
+#nav-list {
+  margin-top: 10px;
+  margin-left: 70px;
+
+}
+#nav-list a {
+  color: #ffdd04;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  font-size: 1em;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+#nav-list a:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+/*.navbar-nav>li>a{
+  padding-top: 20px;
+  padding-bottom: 55px;
+}*/
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -55px;
+}
+/*********************************************************************************** END OF HEADER *****************************************************************************/
+
+/******************************************************************************* HOME PAGE ************************************************************************************/
+
+/*=================================================================================== FOOTER ================================================================================*/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: #222;
+  border-top: 0;
+
+}
+.panel-footer div.row {
+  margin-bottom: 25px;
+}
+.panel-footer h1{
+  font-size: 20px;
+}
+.panel-footer span{
+  font-size: 10px;
+}
+/*============================================================================= END FOOTER =================================================================================*/
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  }
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+   #logo-img {
+    background: url('../images/hotelpedia_logo_4_lg.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 30px 5px 10px 0;
+  }
+  /* End Header */
+
+  #nav-list{
+    margin-left: 30px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Header */
+  #logo-img {
+    background: url('../images/hotelpedia_logo_6_verysmall.png') no-repeat;
+    width: 200px;
+    height: 50px;
+    margin: 10px 5px 5px 0;
+  }
+  /* End Header */
+
+
+
+
+/*END OF BANNER*/
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+
+  /* End Header */
+
+  /* Home page */
+
+} /*from webkit*/
+
+/*-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+a {
+  color: #337aa8;
+}
+a:hover, a:focus {
+  color: #4b8ab2;
+}
+
+.container {
+  margin: 5% 3%;
+}
+@media (min-width: 48em) {
+  .container {
+    margin: 2%;
+  }
+}
+@media (min-width: 75em) {
+  .container {
+    margin: 2em auto;
+    max-width: 75em;
+  }
+}
+
+.responsive-table {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 48em) {
+  .responsive-table {
+    font-size: .9em;
+  }
+}
+@media (min-width: 62em) {
+  .responsive-table {
+    font-size: 1em;
+  }
+}
+.responsive-table thead {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+@media (min-width: 48em) {
+  .responsive-table thead {
+    position: relative;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+}
+.responsive-table thead th {
+  background-color: black;
+  border: 1px solid black;
+  font-weight: normal;
+  text-align: center;
+  color: yellow;
+}
+.responsive-table thead th:first-of-type {
+  text-align: left;
+}
+.responsive-table tbody,
+.responsive-table tr,
+.responsive-table th,
+.responsive-table td {
+  display: block;
+  padding: 0;
+  text-align: left;
+  white-space: normal;
+}
+@media (min-width: 48em) {
+  .responsive-table tr {
+    display: table-row;
+  }
+}
+.responsive-table th,
+.responsive-table td {
+  padding: .5em;
+  vertical-align: middle;
+}
+@media (min-width: 30em) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: .75em .5em;
+  }
+}
+@media (min-width: 48em) {
+  .responsive-table th,
+  .responsive-table td {
+    display: table-cell;
+    padding: .5em;
+  }
+}
+@media (min-width: 62em) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: .75em .5em;
+  }
+}
+@media (min-width: 75em) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: .75em;
+  }
+}
+.responsive-table caption {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .responsive-table caption {
+    font-size: 1.5em;
+  }
+}
+.responsive-table tfoot {
+  font-size: .8em;
+  font-style: italic;
+}
+@media (min-width: 62em) {
+  .responsive-table tfoot {
+    font-size: .9em;
+  }
+}
+@media (min-width: 48em) {
+  .responsive-table tbody {
+    display: table-row-group;
+  }
+}
+.responsive-table tbody tr {
+  margin-bottom: 1em;
+  border: 2px solid black;
+}
+@media (min-width: 48em) {
+  .responsive-table tbody tr {
+    display: table-row;
+    border-width: 1px;
+  }
+}
+.responsive-table tbody tr:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 48em) {
+  .responsive-table tbody tr:nth-of-type(even) {
+    background-color: rgba(94, 93, 82, 0.1);
+  }
+}
+.responsive-table tbody th[scope="row"] {
+  background-color: black;
+  color: yellow;
+}
+@media (min-width: 48em) {
+  .responsive-table tbody th[scope="row"] {
+    background-color: transparent;
+    color: #5e5d52;
+    text-align: left;
+  }
+}
+.responsive-table tbody td {
+  text-align: right;
+}
+@media (min-width: 30em) {
+  .responsive-table tbody td {
+    border-bottom: 1px solid black;
+  }
+}
+@media (min-width: 48em) {
+  .responsive-table tbody td {
+    text-align: center;
+  }
+}
+.responsive-table tbody td[data-type=table] {
+  text-align: right;
+}
+.responsive-table tbody td[data-title]:before {
+  content: attr(data-title);
+  float: left;
+  font-size: .8em;
+  color: rgba(94, 93, 82, 0.75);
+}
+@media (min-width: 30em) {
+  .responsive-table tbody td[data-title]:before {
+    font-size: .9em;
+  }
+}
+@media (min-width: 48em) {
+  .responsive-table tbody td[data-title]:before {
+    content: none;
+  }
+}
+.button{
+  border-radius: 15px;
+  background-color: black;
+  font-size: 20px;
+
+}
+button > a{color: yellow;}
